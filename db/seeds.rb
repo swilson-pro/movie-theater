@@ -39,3 +39,15 @@ m3 = Movie.create(
     rating: 'G',
     theater_id: t2.id
 )
+
+s1 = Showtime.create(
+    movie_id: m3.id,
+    start_time: 2.hours.from_now,
+    end_time: 2.hours.from_now + 90.minutes
+)
+
+s2 = Showtime.create(
+    movie_id: m3.id,
+    start_time: 4.hours.from_now,
+    end_time: 4.hours.from_now + 90.minutes
+)
